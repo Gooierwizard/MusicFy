@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-whith, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie edge">
+        <link rel="stylesheet" href="CSS/fontello.css">
+        <link rel="stylesheet" href="Style.css">
+        <title>MusicFy</title>
+    </head>
+    <body>
+        <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="pages/Inicio.html">Categorías</a>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <video id="silder" autoplay loop>
+                <source src="Videos/video1.1.mp4" type="video/mp4">
+            </video>
+            <ul class="navegation">
+                <li onclick="videoUrl('Videos/video1.1.mp4')"><img src="img/image1.jpg">Call Out My Name</li>
+                <li onclick="videoUrl('Videos/video2.2.mp4')"><img src="img/image2.jpg">Blinding Lights</li>
+                <li onclick="videoUrl('Videos/video3.3.mp4')"><img src="img/image3.jpg">Heartless</li>
+                <li onclick="videoUrl('Videos/video4.4.mp4')"><img src="img/image4.jpg">After Ours</li>
+            </ul>
+            <div class="text">
+                <h1>MusicFy</h1>
+                <p>Top Semanal</p>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function videoUrl(hmmmm){
+                document.getElementById("silder").src = hmmmm;
+            }
+        </script>
+    </body>
+</html>
